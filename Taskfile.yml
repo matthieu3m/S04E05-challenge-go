@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - go build -o monExecutable main.go
+    desc: Compile le projet Go
+
+  clean:
+    cmds:
+      - rm -f monExecutable
+    desc: Supprime les fichiers compilés
